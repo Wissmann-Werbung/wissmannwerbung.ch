@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Styleguide — Wissmann Werbung</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Droid+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Marke */
+    --color-primary:      #FF7200;
+    --color-primary-alt:  #FF6900;
+    --color-link:         #2EA3F2;
+    /* Neutral */
+    --color-black:        #000000;
+    --color-white:        #FFFFFF;
+    --color-text:         #333333;
+    --color-text-muted:   #666666;
+    --color-text-subtle:  #999999;
+    --color-border:       #DDDDDD;
+    --color-border-light: #EEEEEE;
+    --color-surface-alt:  #F3F3F3;
+    --color-slate:        #AEB5BA;
+    --color-footer-bg:    #222222;
+    /* Typografie */
+    --font-body:    'Arimo', Helvetica, Arial, Lucida, sans-serif;
+    --font-heading: 'Droid Sans', sans-serif;
+    --font-alt:     'Verdana', Helvetica, Arial, Lucida, sans-serif;
+    --fw-normal: 400; --fw-medium: 500; --fw-semibold: 600; --fw-bold: 700;
+    --radius-round: 100%;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background: var(--color-white);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  /* Header */
+  header.hero {
+    background: var(--color-white);
+    border-bottom: 4px solid var(--color-primary);
+    padding: 56px 0 40px;
+    text-align: center;
+  }
+  header.hero .logo-mark { display: inline-block; }
+  header.hero .logo-mark img {
+    width: 460px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  header.hero p.tag {
+    margin: 12px 0 0;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: .18em;
+    font-size: 13px;
+  }
+
+  section.block { padding: 48px 0; border-bottom: 1px solid var(--color-border-light); }
+  h2.section-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-size: 22px;
+    color: var(--color-black);
+    margin: 0 0 4px;
+  }
+  h2.section-title::after {
+    content: "";
+    display: block;
+    width: 48px; height: 4px;
+    background: var(--color-primary);
+    margin-top: 10px;
+  }
+  .section-desc { color: var(--color-text-muted); margin: 8px 0 28px; max-width: 60ch; }
+
+  /* Color grid */
+  .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px,1fr)); gap: 16px; }
+  .swatch { border: 1px solid var(--color-border); border-radius: 6px; overflow: hidden; }
+  .swatch .chip { height: 96px; }
+  .swatch .meta { padding: 10px 12px; font-size: 13px; }
+  .swatch .meta .name { font-weight: 700; color: var(--color-text); }
+  .swatch .meta .hex { color: var(--color-text-subtle); font-family: 'Courier New', monospace; text-transform: uppercase; }
+  .swatch .meta .use { display:block; margin-top:4px; color: var(--color-text-muted); font-size:12px; }
+  .chip.bordered { border-bottom: 1px solid var(--color-border); }
+
+  /* Type samples */
+  .type-row { padding: 16px 0; border-bottom: 1px dashed var(--color-border); }
+  .type-row:last-child { border-bottom: 0; }
+  .type-label { font-size: 12px; color: var(--color-text-subtle); text-transform: uppercase; letter-spacing:.1em; margin-bottom: 6px; }
+  .t-h1 { font-family: var(--font-heading); font-weight:700; font-size:40px; text-transform:uppercase; letter-spacing:.03em; color:var(--color-black); margin:0; }
+  .t-h2 { font-family: var(--font-heading); font-weight:700; font-size:28px; text-transform:uppercase; color:var(--color-black); margin:0; }
+  .t-h3 { font-family: var(--font-heading); font-weight:700; font-size:20px; color:var(--color-black); margin:0; }
+  .t-body { font-family: var(--font-body); font-size:16px; color:var(--color-text); margin:0; }
+  .t-muted { font-family: var(--font-body); font-size:14px; color:var(--color-text-muted); margin:0; }
+  .t-link { color: var(--color-link); }
+
+  .weights span { margin-right: 20px; font-size: 20px; }
+  .w400{font-weight:400}.w500{font-weight:500}.w600{font-weight:600}.w700{font-weight:700}
+
+  /* Components */
+  .row { display:flex; flex-wrap:wrap; gap:20px; align-items:center; }
+  .btn {
+    font-family: var(--font-body); font-weight:700; font-size:15px;
+    color:#fff; background: var(--color-primary); border:0;
+    padding: 14px 28px; border-radius: 3px; cursor:pointer;
+    text-transform: uppercase; letter-spacing:.03em;
+  }
+  .btn:hover { background: var(--color-primary-alt); }
+  .btn.ghost { background:transparent; color:var(--color-primary); border:2px solid var(--color-primary); padding:12px 26px; }
+  .badge-round {
+    width: 96px; height:96px; border-radius: var(--radius-round);
+    background: var(--color-primary); color:#fff; display:flex; align-items:center; justify-content:center;
+    font-family: var(--font-heading); font-weight:700; text-transform:uppercase; font-size:13px; text-align:center;
+  }
+  .field {
+    background: var(--color-border-light); border:0; color: var(--color-text);
+    padding: 14px 16px; width: 280px; font-family: var(--font-body); font-size:15px; border-radius:2px;
+  }
+  .field::placeholder { color: var(--color-text-subtle); }
+
+  nav.demo { display:flex; gap:28px; flex-wrap:wrap; }
+  nav.demo a { text-decoration:none; color: var(--color-text); font-weight:600; text-transform:uppercase; font-size:14px; letter-spacing:.03em; }
+  nav.demo a:hover, nav.demo a.active { color: var(--color-primary); }
+
+  .section-bgs { display:grid; grid-template-columns: repeat(auto-fill, minmax(150px,1fr)); gap:0; border:1px solid var(--color-border); border-radius:6px; overflow:hidden; }
+  .section-bgs div { height: 90px; display:flex; align-items:flex-end; padding:8px 10px; font-size:12px; font-weight:700; }
+
+  /* Footer */
+  footer.demo { background: var(--color-footer-bg); color:#fff; padding:40px 0; margin-top:0; }
+  footer.demo h4 { color: var(--color-link); font-family: var(--font-heading); margin:0 0 10px; font-size:16px; }
+  footer.demo a { color:#fff; text-decoration:none; }
+  footer.demo a:hover { opacity:.7; }
+  footer.demo .cols { display:grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap:28px; }
+  footer.demo .bottom { color:#bbb; font-size:13px; margin-top:24px; border-top:1px solid rgba(255,255,255,.1); padding-top:16px; }
+
+  .note { font-size:12px; color:var(--color-text-subtle); margin-top:48px; padding:16px 0 40px; text-align:center; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="logo-mark"><img src="assets/logo.jpg" alt="Wissmann Werbung"></div>
+    <p class="tag">Werbeagentur · Print &amp; Digital</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="block">
+    <h2 class="section-title">Farben</h2>
+    <p class="section-desc">Kräftiges Signal-Orange als Akzent auf überwiegend weissem Grund, ergänzt durch neutrale Grautöne und einen dunklen Footer.</p>
+    <div class="swatches">
+      <div class="swatch"><div class="chip" style="background:#FF7200"></div><div class="meta"><span class="name">Primary</span> · <span class="hex">#FF7200</span><span class="use">Buttons, Icons, Akzente</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#FF6900"></div><div class="meta"><span class="name">Primary Alt</span> · <span class="hex">#FF6900</span><span class="use">Hover / Blocks</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#2EA3F2"></div><div class="meta"><span class="name">Link</span> · <span class="hex">#2EA3F2</span><span class="use">Links, Footer-Titel</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#000000"></div><div class="meta"><span class="name">Black</span> · <span class="hex">#000000</span><span class="use">Text, Überschriften</span></div></div>
+      <div class="swatch"><div class="chip bordered" style="background:#FFFFFF"></div><div class="meta"><span class="name">White</span> · <span class="hex">#FFFFFF</span><span class="use">Haupt-Hintergrund</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#333333"></div><div class="meta"><span class="name">Text</span> · <span class="hex">#333333</span><span class="use">Fliesstext</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#666666"></div><div class="meta"><span class="name">Text Muted</span> · <span class="hex">#666666</span><span class="use">Sekundärtext</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#999999"></div><div class="meta"><span class="name">Text Subtle</span> · <span class="hex">#999999</span><span class="use">Placeholder</span></div></div>
+      <div class="swatch"><div class="chip bordered" style="background:#DDDDDD"></div><div class="meta"><span class="name">Border</span> · <span class="hex">#DDDDDD</span><span class="use">Rahmen, Linien</span></div></div>
+      <div class="swatch"><div class="chip bordered" style="background:#EEEEEE"></div><div class="meta"><span class="name">Border Light</span> · <span class="hex">#EEEEEE</span><span class="use">Feld-Hintergrund</span></div></div>
+      <div class="swatch"><div class="chip bordered" style="background:#F3F3F3"></div><div class="meta"><span class="name">Surface Alt</span> · <span class="hex">#F3F3F3</span><span class="use">Wechsel-Sektion</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#AEB5BA"></div><div class="meta"><span class="name">Slate</span> · <span class="hex">#AEB5BA</span><span class="use">Ruhefläche</span></div></div>
+      <div class="swatch"><div class="chip" style="background:#222222"></div><div class="meta"><span class="name">Footer BG</span> · <span class="hex">#222222</span><span class="use">Footer</span></div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="section-title">Sektions-Hintergründe</h2>
+    <p class="section-desc">Typische Flächenfarben der Seitenabschnitte im Wechsel.</p>
+    <div class="section-bgs">
+      <div style="background:#FFFFFF;color:#333;border-right:1px solid #eee">Weiss</div>
+      <div style="background:#FF7200;color:#fff">Orange</div>
+      <div style="background:#AEB5BA;color:#fff">Blaugrau</div>
+      <div style="background:#000000;color:#fff">Schwarz</div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="section-title">Typografie</h2>
+    <p class="section-desc">Überschriften in <strong>Droid Sans</strong> (oft Grossbuchstaben), Fliesstext in <strong>Arimo</strong>.</p>
+
+    <div class="type-row">
+      <div class="type-label">H1 · Droid Sans 700 · uppercase</div>
+      <p class="t-h1">Webprojekte</p>
+    </div>
+    <div class="type-row">
+      <div class="type-label">H2 · Droid Sans 700</div>
+      <p class="t-h2">Logo-Design</p>
+    </div>
+    <div class="type-row">
+      <div class="type-label">H3 · Droid Sans 700</div>
+      <p class="t-h3">Fahrzeugbeschriftung</p>
+    </div>
+    <div class="type-row">
+      <div class="type-label">Body · Arimo 400 · 16px</div>
+      <p class="t-body">Wir gestalten Marken über Print und Digital hinweg mit hoher fachlicher Kompetenz. Von Logo und Corporate Design bis zu Webprojekten und Beschriftung. <a href="#" class="t-link">Ein Beispiel-Link</a> in Divi-Blau.</p>
+    </div>
+    <div class="type-row">
+      <div class="type-label">Muted · Arimo 400 · 14px</div>
+      <p class="t-muted">Sekundärer Hinweistext in gedämpftem Grau.</p>
+    </div>
+    <div class="type-row">
+      <div class="type-label">Schriftgewichte · Arimo</div>
+      <div class="weights">
+        <span class="w400">400 Normal</span>
+        <span class="w500">500 Medium</span>
+        <span class="w600">600 Semibold</span>
+        <span class="w700">700 Bold</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="section-title">Komponenten</h2>
+    <p class="section-desc">Buttons, runde Badges, Navigation und Formularfelder.</p>
+
+    <div class="type-label">Buttons</div>
+    <div class="row" style="margin-bottom:32px">
+      <button class="btn">Senden</button>
+      <button class="btn ghost">Mehr erfahren</button>
+    </div>
+
+    <div class="type-label">Runde Badges</div>
+    <div class="row" style="margin-bottom:32px">
+      <div class="badge-round">Print</div>
+      <div class="badge-round">Web</div>
+      <div class="badge-round">Design</div>
+    </div>
+
+    <div class="type-label">Navigation</div>
+    <nav class="demo" style="margin-bottom:32px">
+      <a href="#" class="active">Agentur</a>
+      <a href="#">Team</a>
+      <a href="#">Kunden</a>
+      <a href="#">Kontakt</a>
+      <a href="#">DSGVO</a>
+    </nav>
+
+    <div class="type-label">Formularfelder</div>
+    <div class="row">
+      <input class="field" type="text" placeholder="Ihr Name">
+      <input class="field" type="email" placeholder="E-Mail-Adresse">
+    </div>
+  </section>
+
+</main>
+
+<footer class="demo">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Wissmann Werbung</h4>
+        <p style="margin:0;color:#bbb;font-size:14px">Werbeagentur<br>Schweiz</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <p style="margin:0;font-size:14px"><a href="#">Agentur</a> · <a href="#">Team</a> · <a href="#">Kunden</a></p>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <p style="margin:0;font-size:14px"><a href="#">Facebook</a></p>
+      </div>
+    </div>
+    <div class="bottom">© Wissmann Werbung — Styleguide-Vorschau</div>
+  </div>
+</footer>
+
+<p class="note">Design-Vorschau automatisch generiert aus den Tokens in DESIGN.md · extrahiert von wissmannwerbung.ch</p>
+
+</body>
+</html>

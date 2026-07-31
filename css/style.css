@@ -4,15 +4,16 @@
    ========================================================= */
 
 :root {
-  --color-ink: #1d1d1f;
-  --color-body: #3c3c40;
-  --color-muted: #77777d;
-  --color-accent: #e30613;      /* kräftiges Werbe-Rot */
-  --color-accent-dark: #b3050f;
+  --color-ink: #1f1f1f;
+  --color-body: #333333;
+  --color-muted: #666666;
+  --color-accent: #ff7200;      /* Marken-Orange (Signalfarbe) */
+  --color-accent-dark: #e56600; /* dunklere Orange-Variante für Hover */
   --color-bg: #ffffff;
-  --color-bg-alt: #f4f4f5;
-  --color-line: #e3e3e6;
-  --font-stack: "Helvetica Neue", Helvetica, Arial, "Segoe UI", sans-serif;
+  --color-bg-alt: #f3f3f3;
+  --color-line: #dddddd;
+  --font-stack: "Arimo", Helvetica, Arial, "Lucida Grande", sans-serif;
+  --font-heading: "Droid Sans", "Arimo", Helvetica, Arial, sans-serif;
   --container: 1120px;
   --radius: 10px;
 }
@@ -37,9 +38,10 @@ body {
 }
 
 h1, h2, h3 {
+  font-family: var(--font-heading);
   color: var(--color-ink);
   line-height: 1.15;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.01em;
 }
 
 .accent { color: var(--color-accent); }
@@ -65,14 +67,15 @@ a:hover { color: var(--color-accent-dark); }
 }
 
 .logo {
-  font-size: 1.35rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  color: var(--color-ink);
+  display: flex;
+  align-items: center;
 }
-.logo:hover { color: var(--color-ink); }
-.logo-dot { color: var(--color-accent); }
-.logo-sub { font-weight: 300; }
+.logo img {
+  height: 26px;
+  width: auto;
+  max-width: 70vw;
+  display: block;
+}
 
 .main-nav {
   display: flex;
@@ -118,7 +121,7 @@ a:hover { color: var(--color-accent-dark); }
   position: relative;
   padding: 110px 0 120px;
   background:
-    radial-gradient(1000px 500px at 85% -10%, rgba(227, 6, 19, 0.07), transparent 60%),
+    radial-gradient(1000px 500px at 85% -10%, rgba(255, 114, 0, 0.10), transparent 60%),
     var(--color-bg);
   overflow: hidden;
 }
@@ -136,7 +139,7 @@ a:hover { color: var(--color-accent-dark); }
 
 .hero h1 {
   font-size: clamp(2.2rem, 5vw, 3.6rem);
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 24px;
 }
 
@@ -155,10 +158,10 @@ a:hover { color: var(--color-accent-dark); }
   bottom: -40px;
   width: 340px;
   height: 340px;
-  background: linear-gradient(135deg, var(--color-accent), #ff5a3c);
+  background: linear-gradient(135deg, var(--color-accent), #ffb066);
   transform: rotate(12deg);
   border-radius: 48px;
-  opacity: 0.09;
+  opacity: 0.12;
 }
 
 /* ===== Buttons ===== */
@@ -209,7 +212,7 @@ a:hover { color: var(--color-accent-dark); }
 
 .section-head h2 {
   font-size: clamp(1.7rem, 3.4vw, 2.5rem);
-  font-weight: 800;
+  font-weight: 700;
 }
 
 /* ===== Agentur ===== */
@@ -265,7 +268,7 @@ a:hover { color: var(--color-accent-dark); }
   width: 52px;
   height: 52px;
   border-radius: 12px;
-  background: rgba(227, 6, 19, 0.09);
+  background: rgba(255, 114, 0, 0.12);
   color: var(--color-accent);
   display: flex;
   align-items: center;
@@ -311,7 +314,7 @@ a:hover { color: var(--color-accent-dark); }
 
 /* ===== CTA-Banner ===== */
 .cta-banner {
-  background: linear-gradient(120deg, var(--color-accent), #c00510 60%, #8f040c);
+  background: linear-gradient(120deg, var(--color-accent), #ff8f33 55%, #e56600);
   color: #fff;
   padding: 76px 0;
 }
@@ -366,7 +369,7 @@ a:hover { color: var(--color-accent-dark); }
 
 /* ===== Unterseiten (Impressum / Datenschutz) ===== */
 .page-content { padding: 80px 0; max-width: 760px; }
-.page-content h1 { font-size: 2.1rem; font-weight: 800; margin-bottom: 32px; }
+.page-content h1 { font-size: 2.1rem; font-weight: 700; margin-bottom: 32px; }
 .page-content h2 { font-size: 1.25rem; margin: 32px 0 10px; }
 .page-content p + p { margin-top: 14px; }
 
