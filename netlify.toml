@@ -1,0 +1,27 @@
+# Netlify-Konfiguration – wissmann.werbung
+# Reine statische Seite (HTML/CSS/JS), kein Build-Schritt nötig.
+# Projekt: wissmannwerbung  ·  Repo: kraeki/wissmannwerbung.ch
+
+[build]
+  # Es wird das Repo-Root direkt ausgeliefert.
+  publish = "."
+
+# ── Deploy-Kontexte ────────────────────────────────────────────────
+# Production: der main-Branch  →  https://wissmannwerbung.netlify.app
+[context.production]
+
+# Deploy Preview: automatisch für jeden Pull Request
+#   →  https://deploy-preview-<PR-Nummer>--wissmannwerbung.netlify.app
+[context.deploy-preview]
+
+# Branch-Deploy: für gepushte Branches (ohne PR)
+#   →  https://<branch-name>--wissmannwerbung.netlify.app
+[context.branch-deploy]
+
+# ── Basis-Header ───────────────────────────────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
