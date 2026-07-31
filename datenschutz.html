@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 </head>
-<body>
+<body data-page="datenschutz">
 
   <header class="site-header">
     <div class="container header-inner">
@@ -24,6 +24,11 @@
         <a href="index.html#arbeitsweise">Arbeitsweise</a>
         <a href="index.html#kontakt" class="nav-cta">Kontakt</a>
       </nav>
+      <div class="lang-switcher" aria-label="Sprache / Language">
+        <button type="button" class="lang-btn" data-lang="de" aria-label="Deutsch">DE</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
       <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -97,6 +102,7 @@
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
