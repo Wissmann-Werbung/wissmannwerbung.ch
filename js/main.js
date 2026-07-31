@@ -20,6 +20,15 @@ if (year) {
   year.textContent = new Date().getFullYear();
 }
 
+// Footer-Link zuverlässig bis an den Seitenanfang scrollen
+const backToTop = document.querySelector('.footer-nav a[href="#top"]');
+if (backToTop) {
+  backToTop.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
 // Portfolio-Filter
 const pfFilters = document.getElementById('pfFilters');
 if (pfFilters) {
