@@ -20,6 +20,28 @@ if (year) {
   year.textContent = new Date().getFullYear();
 }
 
+// Portfolio-Filter
+const pfFilters = document.getElementById('pfFilters');
+if (pfFilters) {
+  const buttons = pfFilters.querySelectorAll('.pf-filter');
+  const groups = document.querySelectorAll('.pf-group');
+
+  const applyFilter = (filter) => {
+    groups.forEach((group) => {
+      group.hidden = filter !== 'all' && group.dataset.cat !== filter;
+    });
+    buttons.forEach((btn) => {
+      const active = btn.dataset.filter === filter;
+      btn.classList.toggle('is-active', active);
+      btn.setAttribute('aria-pressed', String(active));
+    });
+  };
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => applyFilter(btn.dataset.filter));
+  });
+}
+
 // Lightbox für Portfolio-Bilder
 const lightbox = document.getElementById('lightbox');
 if (lightbox) {
