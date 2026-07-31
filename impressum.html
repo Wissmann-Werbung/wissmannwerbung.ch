@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 </head>
-<body>
+<body data-page="impressum">
 
   <header class="site-header">
     <div class="container header-inner">
@@ -24,6 +24,11 @@
         <a href="index.html#arbeitsweise">Arbeitsweise</a>
         <a href="index.html#kontakt" class="nav-cta">Kontakt</a>
       </nav>
+      <div class="lang-switcher" aria-label="Sprache / Language">
+        <button type="button" class="lang-btn" data-lang="de" aria-label="Deutsch">DE</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
       <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -39,11 +44,11 @@
       Kurt Wissmann<br>
       Hintergass 20<br>
       8424 Embrach<br>
-      Schweiz
+      <span class="country">Schweiz</span>
     </p>
     <p>
-      Telefon: <a href="tel:+41792579973">+41 79 257 99 73</a><br>
-      E-Mail: <a href="mailto:info@wissmannwerbung.ch">info@wissmannwerbung.ch</a>
+      <span class="phone-label">Telefon:</span> <a href="tel:+41792579973">+41 79 257 99 73</a><br>
+      <span class="email-label">E-Mail:</span> <a href="mailto:info@wissmannwerbung.ch">info@wissmannwerbung.ch</a>
     </p>
 
     <h2>Haftungsausschluss</h2>
@@ -82,6 +87,7 @@
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
