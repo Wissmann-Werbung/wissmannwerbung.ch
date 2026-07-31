@@ -152,18 +152,6 @@ a:hover { color: var(--color-accent-dark); }
 
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
 
-.hero-stripe {
-  position: absolute;
-  right: -60px;
-  bottom: -40px;
-  width: 340px;
-  height: 340px;
-  background: linear-gradient(135deg, var(--color-accent), #ffb066);
-  transform: rotate(12deg);
-  border-radius: 48px;
-  opacity: 0.12;
-}
-
 /* ===== Buttons ===== */
 .btn {
   display: inline-block;
