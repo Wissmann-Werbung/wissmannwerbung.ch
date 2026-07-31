@@ -25,16 +25,18 @@ const pfFilters = document.getElementById('pfFilters');
 if (pfFilters) {
   const buttons = pfFilters.querySelectorAll('.pf-filter');
   const groups = document.querySelectorAll('.pf-group');
+  const hint = document.getElementById('pfHint');
 
   const applyFilter = (filter) => {
     groups.forEach((group) => {
-      group.hidden = filter !== 'all' && group.dataset.cat !== filter;
+      group.hidden = group.dataset.cat !== filter;
     });
     buttons.forEach((btn) => {
       const active = btn.dataset.filter === filter;
       btn.classList.toggle('is-active', active);
       btn.setAttribute('aria-pressed', String(active));
     });
+    if (hint) hint.hidden = true;
   };
 
   buttons.forEach((btn) => {

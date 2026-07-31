@@ -379,8 +379,14 @@ a:hover { color: var(--color-accent-dark); }
   color: #fff;
 }
 
-.pf-group { margin-top: 56px; }
-.pf-group:first-of-type { margin-top: 40px; }
+.pf-hint {
+  margin-top: 8px;
+  color: var(--color-muted);
+  font-size: 0.97rem;
+}
+.pf-hint[hidden] { display: none; }
+
+.pf-group { margin-top: 40px; }
 .pf-group[hidden] { display: none; }
 
 .pf-group-head { margin-bottom: 22px; max-width: 720px; }
