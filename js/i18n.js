@@ -3,8 +3,8 @@
 const translations = {
   de: {
     // Page metadata
-    site_title_main: "wissmann.werbung – Full-Service Werbeagentur | Embrach ZH",
-    site_meta_desc: "wissmann.werbung ist Ihre Full-Service Werbe- und Marketing-Agentur in Embrach. Grafik, Print, Web, Beschriftungen, Logo-Entwicklung und Social Media – alles aus einer Hand.",
+    site_title_main: "WISSMANN.WERBUNG – Full-Service Werbeagentur | Embrach ZH",
+    site_meta_desc: "WISSMANN.WERBUNG ist Ihre Full-Service Werbe- und Marketing-Agentur in Embrach. Grafik, Print, Web, Beschriftungen, Logo-Entwicklung und Social Media – alles aus einer Hand.",
 
     // Navigation
     nav_agentur: "Agentur",
@@ -26,7 +26,7 @@ const translations = {
     // Agentur
     agentur_kicker: "Die Agentur",
     agentur_title_html: "Klein, persönlich, <span class=\"accent\">voll auf Draht</span>.",
-    agentur_p1: "wissmann.werbung ist eine inhabergeführte Full-Service-Agentur mit Sitz in Embrach im Zürcher Unterland. Seit 2000 betreuen wir Firmen, Vereine und Privatpersonen in allen Fragen rund um Werbung, Grafik und Kommunikation.",
+    agentur_p1: "WISSMANN.WERBUNG ist eine inhabergeführte Full-Service-Agentur mit Sitz in Embrach im Zürcher Unterland. Seit 2000 betreuen wir Firmen, Vereine und Privatpersonen in allen Fragen rund um Werbung, Grafik und Kommunikation.",
     agentur_p2: "Bei uns arbeiten Sie direkt mit dem Inhaber zusammen – ohne Umwege, ohne grosse Overheads. Das heisst: kurze Wege, schnelle Entscheide und faire Preise. Und wenn ein Projekt zusätzliche Spezialisten braucht, greifen wir auf ein eingespieltes Netzwerk von Partnern zurück.",
     agentur_p3: "Ob Flyer, Broschüre, Mailing, Website, Fahrzeug- oder Gebäudebeschriftung – wir begleiten Sie von der ersten Idee bis zum fertigen Produkt.",
     fact_founded_label: "Gegründet",
@@ -131,7 +131,7 @@ const translations = {
     footer_home: "Zur Startseite",
 
     // Impressum Page
-    impressum_meta_title: "Impressum – wissmann.werbung",
+    impressum_meta_title: "Impressum – WISSMANN.WERBUNG",
     impressum_h1: "Impressum",
     impressum_resp_h2: "Verantwortlich für den Inhalt",
     impressum_resp_country: "Schweiz",
@@ -142,10 +142,10 @@ const translations = {
     impressum_links_h2: "Haftung für Links",
     impressum_links_p: "Verweise und Links auf Websites Dritter liegen ausserhalb unseres Verantwortungsbereichs. Der Zugriff und die Nutzung solcher Websites erfolgen auf eigene Gefahr der Nutzerin oder des Nutzers.",
     impressum_copyright_h2: "Urheberrechte",
-    impressum_copyright_p: "Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf dieser Website gehören ausschliesslich wissmann.werbung oder den speziell genannten Rechteinhabern. Für die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung des Urheberrechtsträgers im Voraus einzuholen.",
+    impressum_copyright_p: "Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf dieser Website gehören ausschliesslich WISSMANN.WERBUNG oder den speziell genannten Rechteinhabern. Für die Reproduktion jeglicher Elemente ist die schriftliche Zustimmung des Urheberrechtsträgers im Voraus einzuholen.",
 
     // Datenschutz Page
-    datenschutz_meta_title: "Datenschutz – wissmann.werbung",
+    datenschutz_meta_title: "Datenschutz – WISSMANN.WERBUNG",
     datenschutz_h1: "Datenschutzerklärung",
     datenschutz_intro: "Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. Wir behandeln Ihre Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften der Schweiz (DSG) sowie – soweit anwendbar – der europäischen Datenschutz-Grundverordnung (DSGVO).",
     datenschutz_resp_h2: "Verantwortliche Stelle",
@@ -163,8 +163,8 @@ const translations = {
   },
   en: {
     // Page metadata
-    site_title_main: "wissmann.werbung – Full-Service Advertising Agency | Embrach ZH",
-    site_meta_desc: "wissmann.werbung is your full-service advertising and marketing agency in Embrach. Graphics, print, web, signage, logo development, and social media – all from one single source.",
+    site_title_main: "WISSMANN.WERBUNG – Full-Service Advertising Agency | Embrach ZH",
+    site_meta_desc: "WISSMANN.WERBUNG is your full-service advertising and marketing agency in Embrach. Graphics, print, web, signage, logo development, and social media – all from one single source.",
 
     // Navigation
     nav_agentur: "Agency",
@@ -186,7 +186,7 @@ const translations = {
     // Agentur
     agentur_kicker: "The Agency",
     agentur_title_html: "Compact, personal, <span class=\"accent\">fully switched-on</span>.",
-    agentur_p1: "wissmann.werbung is an owner-managed full-service agency based in Embrach in the Zurich Unterland. Since 2000, we have been supporting companies, associations, and individuals in all matters concerning advertising, graphic design, and communication.",
+    agentur_p1: "WISSMANN.WERBUNG is an owner-managed full-service agency based in Embrach in the Zurich Unterland. Since 2000, we have been supporting companies, associations, and individuals in all matters concerning advertising, graphic design, and communication.",
     agentur_p2: "With us, you work directly with the owner – no detours, no heavy overheads. That means short communication paths, quick decisions, and fair pricing. When a project calls for additional specialists, we draw on a proven network of expert partners.",
     agentur_p3: "Whether flyer, brochure, mailing, website, vehicle, or building signage – we accompany you from the initial spark of an idea to the finished product.",
     fact_founded_label: "Founded",
@@ -291,7 +291,7 @@ const translations = {
     footer_home: "Back to Home",
 
     // Impressum Page
-    impressum_meta_title: "Legal Notice – wissmann.werbung",
+    impressum_meta_title: "Legal Notice – WISSMANN.WERBUNG",
     impressum_h1: "Legal Notice",
     impressum_resp_h2: "Responsible for Content",
     impressum_resp_country: "Switzerland",
@@ -302,10 +302,10 @@ const translations = {
     impressum_links_h2: "Liability for Links",
     impressum_links_p: "References and links to third-party websites are outside our area of responsibility. Access and use of such websites are entirely at the user's own risk.",
     impressum_copyright_h2: "Copyrights",
-    impressum_copyright_p: "The copyright and all other rights to content, images, photos, or other files on this website belong exclusively to wissmann.werbung or the specifically named right holders. Written permission must be obtained in advance for reproduction.",
+    impressum_copyright_p: "The copyright and all other rights to content, images, photos, or other files on this website belong exclusively to WISSMANN.WERBUNG or the specifically named right holders. Written permission must be obtained in advance for reproduction.",
 
     // Datenschutz Page
-    datenschutz_meta_title: "Privacy Policy – wissmann.werbung",
+    datenschutz_meta_title: "Privacy Policy – WISSMANN.WERBUNG",
     datenschutz_h1: "Privacy Policy",
     datenschutz_intro: "The protection of your personal data is very important to us. We handle your data confidentially and in accordance with Swiss data protection legislation (FADP/DSG) as well as the EU GDPR where applicable.",
     datenschutz_resp_h2: "Responsible Entity",
