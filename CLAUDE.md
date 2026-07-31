@@ -1,4 +1,4 @@
-# CLAUDE.md – wissmann.werbung
+# CLAUDE.md – WISSMANN.WERBUNG
 
 Diese Datei steuert, wie KI-Assistenten (Claude Code) an diesem Projekt arbeiten.
 **Kernregel: Niemals direkt auf `main` committen.** Jede Änderung läuft über einen
@@ -9,7 +9,7 @@ Branch und einen Pull Request, den *der Nutzer* merged.
 ## Projekt
 
 Statische Website (reines HTML/CSS/JS, **kein Build-Schritt**) für die Werbeagentur
-wissmann.werbung, Embrach ZH.
+WISSMANN.WERBUNG, Embrach ZH.
 
 | | |
 |---|---|

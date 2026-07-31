@@ -1,6 +1,6 @@
 # wissmannwerbung.ch
 
-Statische Webseite für **wissmann.werbung** – Full-Service Werbe- und
+Statische Webseite für **WISSMANN.WERBUNG** – Full-Service Werbe- und
 Marketing-Agentur, Hintergass 20, 8424 Embrach.
 
 ## Struktur
