@@ -18,6 +18,19 @@
 #   →  https://<branch-name>--wissmannwerbung.netlify.app
 [context.branch-deploy]
 
+# ── Kanonische Domain ─────────────────────────────────────────────
+[[redirects]]
+  from = "https://www.wissmannwerbung.ch/*"
+  to = "https://wissmannwerbung.ch/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://wissmannwerbung.netlify.app/*"
+  to = "https://wissmannwerbung.ch/:splat"
+  status = 301
+  force = true
+
 # ── Basis-Header ───────────────────────────────────────────────────
 [[headers]]
   for = "/*"
