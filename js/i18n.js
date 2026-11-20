@@ -3,8 +3,8 @@
 const translations = {
   de: {
     // Page metadata
-    site_title_main: "WISSMANN.WERBUNG – Full-Service Werbeagentur | Embrach ZH",
-    site_meta_desc: "WISSMANN.WERBUNG ist Ihre Full-Service Werbe- und Marketing-Agentur in Embrach. Grafik, Print, Web, Beschriftungen, Logo-Entwicklung und Social Media – alles aus einer Hand.",
+    site_title_main: "Werbeagentur Embrach | WISSMANN.WERBUNG",
+    site_meta_desc: "WISSMANN.WERBUNG: Ihre Werbeagentur in Embrach für Grafik, Print, Webdesign, Logos und Beschriftungen. Persönlich beraten, komplett umgesetzt.",
 
     // Navigation
     nav_agentur: "Agentur",
